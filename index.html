@@ -2,108 +2,13 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Malla Curricular Derecho</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Malla Curricular Derecho</h1>
-  <div class="grid">
-    <!-- PRIMER SEMESTRE -->
-    <div class="semestre"><h2>1° Semestre</h2>
-      <div class="ramo" data-id="r1">Teoría general de la norma jurídica</div>
-      <div class="ramo" data-id="r2">Sociedad y derecho</div>
-      <div class="ramo" data-id="r3">Instituciones de derecho romano</div>
-      <div class="ramo" data-id="r4">Expresión oral y escrita</div>
-      <div class="ramo" data-id="r5">Técnicas de estudio e investigación</div>
-      <div class="ramo" data-id="r6">Historia del derecho occidental</div>
-    </div>
-    <!-- SEGUNDO SEMESTRE -->
-    <div class="semestre"><h2>2° Semestre</h2>
-      <div class="ramo bloqueado" data-id="r7" data-prereq="r1">Teoría general del ordenamiento jurídico y de la ley</div>
-      <div class="ramo" data-id="r8">Teoría del estado</div>
-      <div class="ramo" data-id="r9">Razonamiento y argumentación jurídica</div>
-      <div class="ramo" data-id="r10">Comunicación y discurso</div>
-      <div class="ramo" data-id="r11">Teoría y política económica</div>
-      <div class="ramo" data-id="r12">Historia del derecho en Chile</div>
-    </div>
-    <!-- TERCER SEMESTRE -->
-    <div class="semestre"><h2>3° Semestre</h2>
-      <div class="ramo" data-id="r13">Teoría general del sujeto de derecho y del acto jurídico</div>
-      <div class="ramo" data-id="r14">Sistema constitucional chileno</div>
-      <div class="ramo" data-id="r15">Introducción al derecho procesal</div>
-      <div class="ramo bloqueado" data-id="r16" data-prereq="r11">Régimen jurídico de la economía y de la competencia</div>
-      <div class="ramo bloqueado" data-id="r17" data-prereq="r1,r2,r4,r5">Pensamiento crítico</div>
-      <div class="ramo bloqueado" data-id="r18" data-prereq="r11">Electivo I</div>
-    </div>
-    <!-- CUARTO SEMESTRE -->
-    <div class="semestre"><h2>4° Semestre</h2>
-      <div class="ramo" data-id="r19">Teoría de los bienes</div>
-      <div class="ramo" data-id="r20">Teoría jurídica de los derechos humanos</div>
-      <div class="ramo bloqueado" data-id="r21" data-prereq="r15">Disposiciones comunes a todo procedimiento</div>
-      <div class="ramo" data-id="r22">Bases del derecho penal</div>
-      <div class="ramo bloqueado" data-id="r23" data-prereq="r11">Derecho y actividad económica</div>
-      <div class="ramo bloqueado" data-id="r24" data-prereq="r17">Pensamiento complejo</div>
-    </div>
-    <!-- QUINTO SEMESTRE -->
-    <div class="semestre"><h2>5° Semestre</h2>
-      <div class="ramo bloqueado" data-id="r25" data-prereq="r13">Teoría de las obligaciones</div>
-      <div class="ramo" data-id="r26">Bases del derecho administrativo</div>
-      <div class="ramo bloqueado" data-id="r27" data-prereq="r21">Proceso civil ordinario</div>
-      <div class="ramo bloqueado" data-id="r28" data-prereq="r22">Teoría del delito</div>
-      <div class="ramo" data-id="r29">Derecho individual del trabajo</div>
-      <div class="ramo" data-id="r30">Inglés I</div>
-      <div class="ramo bloqueado" data-id="r31" data-prereq="r24">Complejidad y derecho</div>
-    </div>
-    <!-- SEXTO SEMESTRE -->
-    <div class="semestre"><h2>6° Semestre</h2>
-      <div class="ramo bloqueado" data-id="r32" data-prereq="r25">Contratación civil</div>
-      <div class="ramo bloqueado" data-id="r33" data-prereq="r26">Control y responsabilidad patrimonial de la administración</div>
-      <div class="ramo bloqueado" data-id="r34" data-prereq="r27">Procedimientos civiles especiales</div>
-      <div class="ramo bloqueado"id="r35" data-prereq="r28">Delitos contra bienes jurídicos fundamentales</div>
-      <div class="ramo bloqueado" data-id="r36" data-prereq="r29">Derecho colectivo del trabajo</div>
-      <div class="ramo bloqueado" data-id="r37" data-prereq="r30">Inglés II</div>
-      <div class="ramo bloqueado" data-id="r38" data-prereq="r20,r26,r28">Electivo II</div>
-    </div>
-    <!-- SÉPTIMO SEMESTRE -->
-    <div class="semestre"><h2>7° Semestre</h2>
-      <div class="ramo" data-id="r39">Estatuto personal de la familia</div>
-      <div class="ramo" data-id="r40">Marco normativo del medio ambiente</div>
-      <div class="ramo bloqueado" data-id="r41" data-prereq="r21,r35">Proceso penal</div>
-      <div class="ramo" data-id="r42">Del comerciante y su régimen jurídico</div>
-      <div class="ramo" data-id="r43">Derecho de aguas</div>
-      <div class="ramo" data-id="r44">Derecho minero</div>
-      <div class="ramo bloqueado" data-id="r45" data-prereq="r37">Inglés III</div>
-      <div class="ramo bloqueado" data-id="r46" data-prereq="r32">Clínica jurídica</div>
-    </div>
-    <!-- OCTAVO SEMESTRE -->
-    <div class="semestre"><h2>8° Semestre</h2>
-      <div class="ramo bloqueado" data-id="r47" data-prereq="r32">Teoría de la responsabilidad civil</div>
-      <div class="ramo bloqueado" data-id="r48" data-prereq="r39">Estatuto patrimonial de la familia</div>
-      <div class="ramo bloqueado" data-id="r49" data-prereq="r34,r41">Recursos procesales</div>
-      <div class="ramo bloqueado" data-id="r50" data-prereq="r42">Organización de la empresa y títulos de crédito</div>
-      <div class="ramo" data-id="r51">Filosofía del derecho</div>
-      <div class="ramo" data-id="r52">Derecho tributario</div>
-      <div class="ramo bloqueado" data-id="r53" data-prereq="r45">Inglés IV</div>
-      <div class="ramo bloqueado" data-id="r54" data-prereq="r46">Pasantías</div>
-    </div>
-    <!-- NOVENO SEMESTRE -->
-    <div class="semestre"><h2>9° Semestre</h2>
-      <div class="ramo" data-id="r55">Ética profesional</div>
-      <div class="ramo" data-id="r56">Negociación jurídica</div>
-      <div class="ramo" data-id="r57">Litigación general</div>
-      <div class="ramo bloqueado" data-id="r58" data-prereq="r54">Clínica comunitaria</div>
-      <div class="ramo bloqueado" data-id="r59" data-prereq="r32,r33,r34,r35,r36,r38,r39,r40,r41,r42,r43,r44,r45,r46,r47,r48,r49,r50,r51,r52,r53,r54">Proyecto de tesis</div>
-      <div class="ramo" data-id="r60">Optativo I</div>
-    </div>
-    <!-- DÉCIMO SEMESTRE -->
-    <div class="semestre"><h2>10° Semestre</h2>
-      <div class="ramo" data-id="r61">Curso preparación examen de grado</div>
-      <div class="ramo bloqueado" data-id="r62" data-prereq="r57">Litigación penal</div>
-      <div class="ramo bloqueado" data-id="r63" data-prereq="r57">Litigación civil y laboral</div>
-      <div class="ramo bloqueado" data-id="r64" data-prereq="r59">Elaboración de tesis</div>
-      <div class="ramo" data-id="r65">Optativo II</div>
-    </div>
-  </div>
+  <div class="malla"></div>
   <script src="script.js"></script>
 </body>
 </html>
